@@ -1,0 +1,18 @@
+def response(user_response):
+    robo_response=''
+    lista.append(user_response) #añado la pregunta del usuario, a la lista de de oraciones
+    TfidfVec=TfidfVectorizer(tokenizer=LemNormalize,encoding='utf-8',strip_accents='unicode') #defino un vector con el retorno de del enfoque tf-idf
+    tfidf=TfidfVec.fit_transform(lista) #evaluamos que tan reiterado aparece cada una de las oraciones en funcion de su distribucion)
+    vals=cosine_similarity(tfidf[-1],tfidf) #usa el valor tfidf comparando con cada uno de los otros, obteniendo un valor entre 0 y 1, si es alto hay una gran similitud entre el tfidf de la consulta con el de un resultado
+    idx=vals.argsort()[0][-2] #del vector de indices ordenados, obtiene el penultimo de la primera fila de la matriz obtenida por la similitud de cosenos
+    flat=vals.flatten() #convierte en vector la matriz
+    flat.sort() #ordena el vector de menor a mayor
+    req_tfidf=flat[-2] #guardo el valor de la penultima posicion del vecot
+    if(req_tfidf==0): #si es nula significa que no esta en el texto
+        robo_response=robo_response+"Perdon no comprendo tu pregunta"
+        return robo_response
+    else: #sino, significa que se encontro informacion acorde a la pregunta
+        robo_response=robo_response+lista[idx]
+        return robo_response
+
+

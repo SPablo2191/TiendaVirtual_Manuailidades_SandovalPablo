@@ -1,0 +1,97 @@
+﻿body {
+    background-image: url('../imagenes/beautiful-dusk-light-colorful-beauty.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tituloPrincipal {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 65px;
+    padding: 0px;
+    margin: 0px;
+}
+
+    #tituloPrincipal h1 {
+        font-size: 75px;
+        padding: 0px;
+        word-spacing: 10px;
+        border-radius: 65px;
+        color: rgb(245, 243, 240);
+        text-shadow: 5px 3px rgba(27, 38, 49,0.5);
+        text-align: center;
+        font-family: 'KG What A Time';
+        margin: 0px;
+    }
+
+    #tituloPrincipal h2 {
+        font-size: 35px;
+        padding: 0px;
+        text-shadow: 5px 3px rgba(27, 38, 49,0.5);
+        color: rgb(245, 243, 240);
+        text-align: center;
+        font-family: 'Chocolate Cookies';
+        margin: 0px;
+    }
+
+nav {
+    background-color: rgba(46, 134, 193,0.5);
+    border-radius: 65px;
+}
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        padding: 0px;
+    }
+
+        nav ul li {
+            display: inline;
+        }
+
+            nav ul li a {
+                color: white;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-decoration: none;
+                padding: 8px 20px;
+                display: inline-block;
+            }
+
+                nav ul li a:hover {
+                    color: rgb(27, 38, 49);
+                    font-size: 25px;
+                    background-color: rgba(93, 173, 226,0.25);
+                }
+
+#pie {
+    color: rgb(27, 38, 49);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.contenedor {
+    font-family: 'Cloud Light';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align:center;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+
+.contenedor h1,h2 {
+        text-align: center;
+        margin-left: 20px;
+        font-size:40px;
+        font-size: 35px;
+        color: rgb(46, 46, 46);
+        font-family: 'Cloud';
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid silver;
+}

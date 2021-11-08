@@ -1,0 +1,167 @@
+﻿
+
+body {
+    background-image: url('../imagenes/beautiful-dusk-light-colorful-beauty.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#tituloPrincipal {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 65px;
+    padding: 0px;
+    margin: 0px;
+}
+
+    #tituloPrincipal h1 {
+        font-size: 75px;
+        padding: 0px;
+        word-spacing: 10px;
+        border-radius: 65px;
+        color: rgb(245, 243, 240);
+        text-shadow: 5px 3px rgba(27, 38, 49,0.5);
+        text-align: center;
+        font-family: 'KG What A Time';
+        margin: 0px;
+    }
+
+    #tituloPrincipal h2 {
+        font-size: 35px;
+        padding: 0px;
+        text-shadow: 5px 3px rgba(27, 38, 49,0.5);
+        color: rgb(245, 243, 240);
+        text-align: center;
+        font-family: 'Chocolate Cookies';
+        margin: 0px;
+    }
+nav {
+    background-color: rgba(46, 134, 193,0.5);
+    border-radius: 65px;
+}
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        padding: 0px;
+    }
+
+        nav ul li {
+            display: inline;
+        }
+
+            nav ul li a {
+                color: white;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-decoration: none;
+                padding: 8px 20px;
+                display: inline-block;
+            }
+
+                nav ul li a:hover {
+                    color: rgb(27, 38, 49);
+                    font-size: 25px;
+                    background-color: rgba(93, 173, 226,0.25);
+                }
+body {
+    background-color: lightgrey;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: auto;
+    background-color: white;
+    width: 90%;
+    border-radius:10px;
+    padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+    ul.slider {
+        position: relative;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+    }
+
+        ul.slider li {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+            width: 100%;
+            /*height: inherit;*/
+            transition: opacity .5s;
+            background: #fff;
+        }
+            ul.slider li h1 {
+                position: absolute;
+                text-align: center;
+                color: #ffffff;
+                padding:75px;
+                font-size: 100px;
+                word-spacing: 15px;
+                font-family: Relate;
+                margin: 0px;
+                text-shadow: 5px 3px rgba(27, 38, 49,0.5);
+            }
+            ul.slider li h2 {
+                position: absolute;
+                text-align: center;
+                color: #ffffff;
+                font-size: 50px;
+                padding-top: 19px;
+                word-spacing: 15px;
+                font-family: Relate;
+                margin: 0px;
+                text-shadow: 5px 3px rgba(27, 38, 49,0.5);
+            }
+            ul.slider li img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+
+            ul.slider li:first-child {
+                opacity: 1; /*Mostramos el primer <li>*/
+            }
+
+            ul.slider li:target {
+                opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+            }
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+    .menu li {
+        display: inline-block;
+        text-align: center;
+    }
+
+        .menu li a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            background-color: grey;
+            padding: 10px;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            border-radius: 100%;
+        }
+#pie {
+    color: rgb(27, 38, 49);
+    bottom: 0;
+    position: static;
+    width: 100%;
+    height: 1px;
+}

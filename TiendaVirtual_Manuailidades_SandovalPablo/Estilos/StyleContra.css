@@ -1,0 +1,191 @@
+﻿body {
+    background-image: url('../imagenes/beautiful-dusk-light-colorful-beauty.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#tituloPrincipal {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 65px;
+    padding: 0px;
+    margin: 0px;
+}
+
+    #tituloPrincipal h1 {
+        font-size: 75px;
+        padding: 0px;
+        word-spacing: 10px;
+        border-radius: 65px;
+        color: rgb(245, 243, 240);
+        text-shadow: 5px 3px rgba(27, 38, 49,0.5);
+        text-align: center;
+        font-family: 'KG What A Time';
+        margin: 0px;
+    }
+
+    #tituloPrincipal h2 {
+        font-size: 35px;
+        padding: 0px;
+        text-shadow: 5px 3px rgba(27, 38, 49,0.5);
+        color: rgb(245, 243, 240);
+        text-align: center;
+        font-family: 'Chocolate Cookies';
+        margin: 0px;
+    }
+
+nav {
+    background-color: rgba(46, 134, 193,0.5);
+    border-radius: 65px;
+}
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        padding: 0px;
+    }
+
+        nav ul li {
+            display: inline;
+        }
+
+            nav ul li a {
+                color: white;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-decoration: none;
+                padding: 8px 20px;
+                display: inline-block;
+            }
+
+                nav ul li a:hover {
+                    color: rgb(27, 38, 49);
+                    font-size: 25px;
+                    background-color: rgba(93, 173, 226,0.25);
+                }
+
+.contenedor {
+    font-family: 'Montserrat Alternates';
+    background: linear-gradient(to bottom, #ffffff, #f0eff0, #e2e0e1, #d5d0d1, #c8c1c1);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    position: static;
+    border-radius: 10px;
+    width: 60%;
+}
+
+    .contenedor h1 {
+        color: rgb(46, 46, 46);
+        text-align: center;
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid silver;
+    }
+
+    .contenedor form {
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+form .campo-entrada {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+    form .campo-entrada .textos {
+        height: 40px;
+        width: 100%;
+        font-size: 16px;
+        padding: 0 5px;
+        border: none;
+        background: none;
+        outline: none;
+    }
+
+    form .campo-entrada label {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        color: rgba(27, 38, 49,0.5);
+        transform: translateY(-50%);
+        font-size: 16px;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+.contenedor p {
+    text-align: center;
+}
+
+.contenedor a {
+    text-decoration: none;
+    margin: -5px 0 20px 5px;
+    left: 5px;
+    cursor: pointer;
+    color: rgb(27, 38, 49);
+}
+
+    .contenedor a:hover {
+        text-decoration: none;
+        color: #2E86C1;
+    }
+
+.campo-entrada span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.campo-entrada input:focus ~ label,
+.campo-entrada input:valid ~ label {
+    top: -5px;
+    color: #2691d9;
+}
+
+.campo-entrada input:focus ~ span::before,
+.campo-entrada input:valid ~ span::before {
+    width: 100%;
+}
+
+.contenedor .boton-centrado {
+    display: block;
+    justify-content: center;
+}
+
+#Button1,#Button2,#Button3 {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+    #Button1:hover {
+        border-color: #2691d9;
+        transition: .5s;
+    }
+
+#pie {
+    color: rgb(27, 38, 49);
+    bottom: 0;
+    position: static;
+    width: 100%;
+    height: 1px;
+}
+
+form .label-advertencia #Mensaje_Error {
+    text-align: center;
+    color: darkred;
+    margin-left: 25%;
+}
